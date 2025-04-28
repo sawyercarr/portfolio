@@ -3,32 +3,69 @@
     <head>
         <title>portfolio</title>
         <style>
+            body {
+                background-color: #cdebb2;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+            }
+            main {
+                display: flex;
+                justify-content: center;
+                height: 100%
+            }
+            #AboutMe {
+                flex: 1;
+            }
+            #Gallery {
+                flex: 2;
+                overflow-y: scroll;
+                max-height: 100vh;
+            }
             .row {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            }
-            body {
-                background-color: #cdebb2 ;
-                border: #ee190a;
-
+                margin-bottom: 20px;
             }
             img {
-                border: 3px solid #ee190a;
+                border: 3px solid black;
+                height: 300px;
             }
         </style>
     </head>
     <body>
-        <p style="text-align : center;">(put text here)</p>
-        <h1 style="text-align : center;">portfolio</h1>
-        
-        <div class="row">
-            <img src="IMG_4197.webp"/>
-            <p>description</p>
-        </div>
-        <div class="row">
-            <p>description</p> 
-            <img src="IMG_4197.webp"/>
-        </div>
+        <main>
+            <section id="AboutMe">
+                <h4>About Me</h4>
+            </section>
+            <section id = "Gallery">
+                <h4>Art</h4>
+                <div class="row">
+                    <img src="IMG_4197.webp"/>
+                    <p>description</p>
+                </div>
+                <div class="row">
+                    <p>description</p> 
+                    <img src="IMG_4197.webp"/>
+                </div>
+                <div class="row">
+                    <img src="IMG_4197.webp"/>
+                    <p>description</p>
+                </div>
+                <div class="row">
+                    <p>description</p> 
+                    <img src="IMG_4197.webp"/>
+                </div>
+                <div class="row">
+                    <img src="IMG_4197.webp"/>
+                    <p>description</p>
+                </div>
+                <div class="row">
+                    <p>description</p> 
+                    <img src="IMG_4197.webp"/>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
