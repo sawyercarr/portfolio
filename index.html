@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
         <title>portfolio</title>
         <style>
@@ -23,15 +23,18 @@
                 overflow-y: scroll;
                 max-height: 100vh;
             }
-            .row {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
             #Gallery img {
                 border: 3px solid black;
                 height: 300px;
+            }
+            #popup {
+                display: none;
+                height: 80%;
+                width: 55%;
+                background-color: white;
+                justify-content: center;
+                position: fixed;
+                top: 10%; left: 40%;
             }
         </style>
     </head>
@@ -45,32 +48,43 @@
 
             </section>
             <section id = "Gallery">
+                <div id = "popup">
+                    <p> I am a popup</p>
+                    <img id = "popupImg" src = "IMG_4197.webp"/>
+                    <button id = "closePopup">Close</button>
+                </div>
                 <h4>Art</h4>
-                <div class="row">
-                    <img src="IMG_4197.webp"/>
-                    <p>description</p>
-                </div>
-                <div class="row">
-                    <p>description</p> 
-                    <img src="IMG_4197.webp"/>
-                </div>
-                <div class="row">
-                    <img src="IMG_4197.webp"/>
-                    <p>description</p>
-                </div>
-                <div class="row">
-                    <p>description</p> 
-                    <img src="IMG_4197.webp"/>
-                </div>
-                <div class="row">
-                    <img src="IMG_4197.webp"/>
-                    <p>description</p>
-                </div>
-                <div class="row">
-                    <p>description</p> 
-                    <img src="IMG_4197.webp"/>
-                </div>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img id = "popupImg" src = "IMG_4197.webp"/>
             </section>
         </main>
     </body>
 </html>
+<script>
+    const matches = document.querySelectorAll("#Gallery img");
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+
+    matches.forEach((img) => {
+        img.addEventListener('click', () => {
+            popup.style.display = 'block';
+            document.getElementById("popupImg").src="Default_pfp.jpg";
+            document.getElementById('Gallery').style.overflowY = 'hidden';
+        });
+    });
+
+    closePopup.addEventListener('click', () => {
+        popup.style.display = 'none';
+        document.getElementById('Gallery').style.overflowY = 'scroll';
+    });
+</script>
