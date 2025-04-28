@@ -1,0 +1,42 @@
+[
+    {
+        "src": "IMG_0285.webp",
+        "caption": "A description for image A"
+    },
+    {
+        "src": "IMG_4197.webp",
+        "caption": "A description for image B"
+    },
+    {
+        "src": "IMG_4227.webp",
+        "caption": "A description for image C"
+    },
+    {
+        "src": "IMG_4544.webp",
+        "caption": "A description for image D"
+    },
+    {
+        "src": "IMG_4627.webp",
+        "caption": "A description for image E"
+    },
+    {
+        "src": "IMG_5088.webp",
+        "caption": "A description for image F"
+    },
+    {
+        "src": "IMG_5089.webp",
+        "caption": "A description for image G"
+    },
+    {
+        "src": "IMG_7163.webp",
+        "caption": "A description for image H"
+    },
+    {
+        "src": "IMG_7187.webp",
+        "caption": "A description for image I"
+    },
+    {
+        "src": "IMG_7200.webp",
+        "caption": "A description for image J"
+    }
+]
