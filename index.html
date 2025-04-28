@@ -22,10 +22,17 @@
                 flex: 2;
                 overflow-y: scroll;
                 max-height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
             }
             #Gallery img {
-                border: 3px solid black;
-                height: 300px;
+                border: 2px solid black;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                margin: 10px;
+                box-sizing: border-box;
             }
             #popup {
                 display: none;
@@ -35,6 +42,10 @@
                 justify-content: center;
                 position: fixed;
                 top: 10%; left: 40%;
+            }
+            #popup img {
+                height: 50%;
+                width: auto;
             }
         </style>
     </head>
@@ -54,18 +65,32 @@
                     <button id = "closePopup">Close</button>
                 </div>
                 <h4>Art</h4>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
-                <img id = "popupImg" src = "IMG_4197.webp"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
+                <img src = "Default_pfp.jpg"/>
             </section>
         </main>
     </body>
