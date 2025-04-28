@@ -65,32 +65,30 @@
                     <button id = "closePopup">Close</button>
                 </div>
                 <h4>Art</h4>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "IMG_4197.webp"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
-                <img src = "Default_pfp.jpg"/>
+                <img src = "IMG_4197.webp" data-caption = "A"/>
+                <img src = "Default_pfp.jpg" data-caption = "B"/>
+                <img src = "IMG_4197.webp" data-caption = "C"/>
+                <img src = "Default_pfp.jpg" data-caption = "D"/>
+                <img src = "IMG_4197.webp" data-caption = "E"/>
+                <img src = "Default_pfp.jpg" data-caption = "F"/>
+                <img src = "IMG_4197.webp" data-caption = "G"/>
+                <img src = "Default_pfp.jpg" data-caption = "H"/>
+                <img src = "IMG_4197.webp" data-caption = "I"/>
+                <img src = "Default_pfp.jpg" data-caption = "J"/>
+                <img src = "IMG_4197.webp" data-caption = "K"/>
+                <img src = "Default_pfp.jpg" data-caption = "L"/>
+                <img src = "IMG_4197.webp" data-caption = "M"/>
+                <img src = "Default_pfp.jpg" data-caption = "N"/>
+                <img src = "IMG_4197.webp" data-caption = "O"/>
+                <img src = "Default_pfp.jpg" data-caption = "P"/>
+                <img src = "IMG_4197.webp" data-caption = "Q"/>
+                <img src = "Default_pfp.jpg" data-caption = "R"/>
+                <img src = "Default_pfp.jpg" data-caption = "S"/>
+                <img src = "Default_pfp.jpg" data-caption = "T"/>
+                <img src = "Default_pfp.jpg" data-caption = "U"/>
+                <img src = "Default_pfp.jpg" data-caption = "V"/>
+                <img src = "Default_pfp.jpg" data-caption = "W"/>
+                <img src = "Default_pfp.jpg" data-caption = "X"/>
             </section>
         </main>
     </body>
@@ -102,9 +100,11 @@
 
     matches.forEach((img) => {
         img.addEventListener('click', () => {
-            popup.style.display = 'block';
-            document.getElementById("popupImg").src="Default_pfp.jpg";
+            //document.getElementById("popupImg").src="Default_pfp.jpg";
+            document.getElementById("popupImg").src=img.src;
+            document.getElementById("popupText").textContent = img.dataset.caption;
             document.getElementById('Gallery').style.overflowY = 'hidden';
+            popup.style.display = 'block';
         });
     });
 
