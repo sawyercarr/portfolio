@@ -140,11 +140,22 @@ body.darkMode #popup {
     justify-content: space-between;
     width: 100%;
 }
-#Next {
-    margin-left: auto;
-}
 #Prev {
     margin-right: auto;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#Next {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#Prev:hover, #Next:hover {
+    color: #007acc;
 }
 #closePopup {
     padding: 10px 20px;
