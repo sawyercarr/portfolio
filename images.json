@@ -1,11 +1,11 @@
 [
     {
         "src": "panic_attack.webp",
-        "caption": "A description for image A"
+        "caption": "pouring everything into a piece can leave the mind empty"
     },
     {
-        "src": "dice_bunny.webp",
-        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit"
+        "src": "green.webp",
+        "caption": "  "
     },
     {
         "src": "pink.webp",
@@ -13,15 +13,15 @@
     },
     {
         "src": "purp.webp",
-        "caption": "A description for image D"
+        "caption": "curiosity in the unknown"
     },
     {
         "src": "yellow.webp",
-        "caption": "A description for image E"
+        "caption": "attempt of a face"
     },
     {
-        "src": "green.webp",
-        "caption": "A description for image F"
+        "src": "dice_bunny.webp",
+        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit"
     },
     {
         "src": "blue.webp",
@@ -38,5 +38,10 @@
     {
         "src": "stumped.webp",
         "caption": "A description for image J"
+    },
+    {
+        "src": "skeloton.webp",
+        "caption": "skeloton"
     }
 ]
+
