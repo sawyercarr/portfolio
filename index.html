@@ -216,6 +216,9 @@
     closePopup.addEventListener('click', () => {
         popup.style.display = 'none';
         document.getElementById('Gallery').style.overflowY = 'scroll';
+        allImages.forEach(image => {
+            image.style.cursor = 'pointer';
+        });
     });
 
     fetch('./images.json')
@@ -237,15 +240,19 @@
                 img.dataset.category = item.category;
 
                 img.addEventListener('click', () => {
+                    if (document.getElementById('popup').style.display === 'flex') return;
+
                     document.getElementById('popupImg').src = img.src;
                     document.getElementById('popupText').textContent = img.dataset.caption;
                     document.getElementById('Gallery').style.overflowY = 'hidden';
                     document.getElementById('popup').style.display = 'flex';
+
+                    allImages.forEach(image => {
+                        image.style.cursor = 'default';
+                    });
                 });
 
                 allImages.push(img);
-
-                //imageGrid.appendChild(img);
 
                 categoriesSet.add(item.category);
             });
