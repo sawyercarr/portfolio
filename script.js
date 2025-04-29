@@ -1,4 +1,5 @@
 let allImages = []; // Holds all images currently displayed in the gallery
+let selectedIndex = -1;
 
 // Fill allImages and gallery based on the selected tab
 function populateGallery(category) {
@@ -43,6 +44,22 @@ closePopup.addEventListener('click', () => {
     });
 });
 
+const prev = document.getElementById('Prev');
+const next = document.getElementById('Next');
+prev.addEventListener('click', () => {
+    selectedIndex = selectedIndex-1;
+    newImg = allImages[selectedIndex % allImages.length];
+    document.getElementById('popupImg').src = newImg.src;
+    document.getElementById('popupText').textContent = newImg.dataset.caption;
+});
+
+next.addEventListener('click', () => {
+    selectedIndex = selectedIndex+1;
+    newImg = allImages[selectedIndex % allImages.length];
+    document.getElementById('popupImg').src = newImg.src;
+    document.getElementById('popupText').textContent = newImg.dataset.caption;
+});
+
 // Initial creation of the gallery
 fetch('./images.json')
     .then(response => {
@@ -65,6 +82,8 @@ fetch('./images.json')
             // And allow it to be clickable
             img.addEventListener('click', () => {
                 if (document.getElementById('popup').style.display === 'flex') return;
+
+                selectedIndex = allImages.indexOf(img);
 
                 document.getElementById('popupImg').src = img.src;
                 document.getElementById('popupText').textContent = img.dataset.caption;

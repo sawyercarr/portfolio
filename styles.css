@@ -132,6 +132,20 @@ body.darkMode #popup {
     font-size: 1.2em;
     font-weight: bold;
 }
+#popupContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+#Next {
+    margin-left: auto;
+}
+#Prev {
+    margin-right: auto;
+}
 #closePopup {
     padding: 10px 20px;
     background-color: #ff6666;
