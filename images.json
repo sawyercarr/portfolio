@@ -1,42 +1,52 @@
 [
     {
         "src": "panic_attack.webp",
-        "caption": "A description for image A"
+        "caption": "A description for image A",
+        "category": "portraits"
     },
     {
         "src": "dice_bunny.webp",
-        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit"
+        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit",
+        "category": "misc"
     },
     {
         "src": "pink.webp",
-        "caption": "the beuty in facelessness "
+        "caption": "the beuty in facelessness",
+        "category": "faceless"
     },
     {
         "src": "purp.webp",
-        "caption": "A description for image D"
+        "caption": "A description for image D",
+        "category": "faceless"
     },
     {
         "src": "yellow.webp",
-        "caption": "A description for image E"
+        "caption": "A description for image E",
+        "category": "faceless"
     },
     {
         "src": "green.webp",
-        "caption": "A description for image F"
+        "caption": "A description for image F",
+        "category": "faceless"
     },
     {
         "src": "blue.webp",
-        "caption": "A description for image G"
+        "caption": "A description for image G",
+        "category": "faceless"
     },
     {
         "src": "self_portait.webp",
-        "caption": "A description for image H"
+        "caption": "A description for image H",
+        "category": "portraits"
     },
     {
         "src": "music.webp",
-        "caption": "A description for image I"
+        "caption": "A description for image I",
+        "category": "portraits"
     },
     {
         "src": "stumped.webp",
-        "caption": "A description for image J"
+        "caption": "A description for image J",
+        "category": "misc"
     }
 ]
