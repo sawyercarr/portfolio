@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#AboutMe {
+    flex: 1;
+    background-color: #cdebb2;
+    padding: 10px;
+    justify-content: center;
+    overflow-y: auto;
+}
+body.darkMode #AboutMe {
+    background-color: #325215;
+    color: #bfbfbf;
+}
+#Gallery {
+    flex: 2;
+    overflow-y: scroll;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body.darkMode #Gallery {
+    background-color: rgb(27, 26, 26);
+}
+#tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+body.darkMode #tabs {
+    background-color: #3c3c3c;
+}
+.tab {
+    background-color: #ffffff;
+    border: 2px solid darkgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+body.darkMode .tab {
+    background-color: #404040;
+    color: lightgray;
+    border-color: black;
+}
+.tab:hover {
+    background-color: #d3d3d3;
+}
+.tab.active {
+    border-color: black;
+}
+body.darkMode .tab.active {
+    border-color: lightgray;
+}
+body.darkMode .tab:hover {
+    background-color: #353535;
+}
+#imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+#imageGrid img {
+    border: 2px solid black;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+body.darkMode #imageGrid img {
+    border: 2px solid white;
+}
+#imageGrid img:hover {
+    transform: scale(1.05);
+}
+#popup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    width: 50%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+    border-radius: 10px;
+}
+body.darkMode #popup {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -30%); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+#popup img {
+    max-height: 60vh;
+    width: auto;
+    border: 1px solid black;
+    cursor: default;
+}
+#popup img:hover {
+    transform: none;
+}
+#popupText {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#closePopup {
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#closePopup:hover {
+    background-color: #cc0000;
+}
+#AboutMe img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 200px;
+    max-width: 40%;
+}
