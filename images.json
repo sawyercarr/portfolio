@@ -1,7 +1,7 @@
 [
     {
         "src": "./img/panic_attack.webp",
-        "caption": "A description for image A",
+        "caption": "pouring everything into a piece can leave the mind empty",
         "category": "portraits"
     },
     {
@@ -16,43 +16,48 @@
     },
     {
         "src": "./img/purp.webp",
-        "caption": "A description for image D",
+        "caption": "curiosity",
         "category": "faceless"
     },
     {
         "src": "./img/yellow.webp",
-        "caption": "A description for image E",
+        "caption": "kile",
         "category": "faceless"
     },
     {
         "src": "./img/green.webp",
-        "caption": "A description for image F",
+        "caption": "attempt of a face",
         "category": "faceless"
     },
     {
         "src": "./img/blue.webp",
-        "caption": "A description for image G",
+        "caption": "",
         "category": "faceless"
     },
     {
         "src": "./img/self_portait.webp",
-        "caption": "A description for image H",
+        "caption": "my senior year self portait",
         "category": "portraits"
     },
     {
         "src": "./img/music.webp",
-        "caption": "A description for image I",
+        "caption": "pen sketch",
         "category": "portraits"
     },
     {
         "src": "./img/stumped.webp",
-        "caption": "A description for image J",
+        "caption": "one of stumps",
         "category": "wood"
     },
     {
         "src": "./img/skeloton.webp",
         "caption": "skeloton",
         "category": "misc"
+    },
+    {
+        "src": "./img/IMG_7128.gif",
+        "caption": "shrek",
+        "category": "shrek"
     }
 ]
 
