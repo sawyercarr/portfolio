@@ -1,18 +1,30 @@
 [
     {
         "src": "panic_attack.webp",
+<<<<<<< HEAD
         "caption": "pouring everything into a piece can leave the mind empty"
     },
     {
         "src": "green.webp",
         "caption": "  "
+=======
+        "caption": "A description for image A",
+        "category": "portraits"
+    },
+    {
+        "src": "dice_bunny.webp",
+        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit",
+        "category": "misc"
+>>>>>>> f35360bd81a1e611d969aa2a9565a877e0601e7f
     },
     {
         "src": "pink.webp",
-        "caption": "the beuty in facelessness "
+        "caption": "the beuty in facelessness",
+        "category": "faceless"
     },
     {
         "src": "purp.webp",
+<<<<<<< HEAD
         "caption": "curiosity in the unknown"
     },
     {
@@ -22,26 +34,48 @@
     {
         "src": "dice_bunny.webp",
         "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit"
+=======
+        "caption": "A description for image D",
+        "category": "faceless"
+    },
+    {
+        "src": "yellow.webp",
+        "caption": "A description for image E",
+        "category": "faceless"
+    },
+    {
+        "src": "green.webp",
+        "caption": "A description for image F",
+        "category": "faceless"
+>>>>>>> f35360bd81a1e611d969aa2a9565a877e0601e7f
     },
     {
         "src": "blue.webp",
-        "caption": "A description for image G"
+        "caption": "A description for image G",
+        "category": "faceless"
     },
     {
         "src": "self_portait.webp",
-        "caption": "A description for image H"
+        "caption": "A description for image H",
+        "category": "portraits"
     },
     {
         "src": "music.webp",
-        "caption": "A description for image I"
+        "caption": "A description for image I",
+        "category": "portraits"
     },
     {
         "src": "stumped.webp",
+<<<<<<< HEAD
         "caption": "A description for image J"
     },
     {
         "src": "skeloton.webp",
         "caption": "skeloton"
+=======
+        "caption": "A description for image J",
+        "category": "misc"
+>>>>>>> f35360bd81a1e611d969aa2a9565a877e0601e7f
     }
 ]
 
