@@ -50,7 +50,7 @@
             }
             .tab {
                 background-color: #ffffff;
-                border: 2px solid black;
+                border: 2px solid darkgray;
                 padding: 5px 10px;
                 border-radius: 5px;
                 cursor: pointer;
@@ -59,10 +59,17 @@
             }
             body.darkMode .tab {
                 background-color: #404040;
-                color: lightgray
+                color: lightgray;
+                border-color: black;
             }
             .tab:hover {
                 background-color: #d3d3d3;
+            }
+            .tab.active {
+                border-color: black;
+            }
+            body.darkMode .tab.active {
+                border-color: lightgray;
             }
             body.darkMode .tab:hover {
                 background-color: #353535;
@@ -186,6 +193,21 @@
         });
     }
 
+    function setActiveTab(selectedTab) {
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        selectedTab.classList.add('active');
+    }
+
+
+    document.body.addEventListener('keydown', function(e) {
+        if (e.key == "Escape") {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    });
+
 
     const popup = document.getElementById('popup');
     const closePopup = document.getElementById('closePopup');
@@ -232,6 +254,7 @@
             allTab.classList.add('tab');
             tabsContainer.appendChild(allTab);
             allTab.addEventListener('click', () => {
+                setActiveTab(allTab);
                 populateGallery('All');
             });
 
@@ -243,6 +266,7 @@
                 tabsContainer.appendChild(tab);
 
                 tab.addEventListener('click', () => {
+                    setActiveTab(tab);
                     populateGallery(category);
                 });
             });
