@@ -1,56 +1,56 @@
 [
     {
-        "src": "panic_attack.webp",
+        "src": "./img/panic_attack.webp",
         "caption": "A description for image A",
         "category": "portraits"
     },
     {
-        "src": "dice_bunny.webp",
+        "src": "./img/dice_bunny.webp",
         "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit",
         "category": "misc"
     },
     {
-        "src": "pink.webp",
+        "src": "./img/pink.webp",
         "caption": "the beuty in facelessness",
         "category": "faceless"
     },
     {
-        "src": "purp.webp",
+        "src": "./img/purp.webp",
         "caption": "A description for image D",
         "category": "faceless"
     },
     {
-        "src": "yellow.webp",
+        "src": "./img/yellow.webp",
         "caption": "A description for image E",
         "category": "faceless"
     },
     {
-        "src": "green.webp",
+        "src": "./img/green.webp",
         "caption": "A description for image F",
         "category": "faceless"
     },
     {
-        "src": "blue.webp",
+        "src": "./img/blue.webp",
         "caption": "A description for image G",
         "category": "faceless"
     },
     {
-        "src": "self_portait.webp",
+        "src": "./img/self_portait.webp",
         "caption": "A description for image H",
         "category": "portraits"
     },
     {
-        "src": "music.webp",
+        "src": "./img/music.webp",
         "caption": "A description for image I",
         "category": "portraits"
     },
     {
-        "src": "stumped.webp",
+        "src": "./img/stumped.webp",
         "caption": "A description for image J",
         "category": "wood"
     },
     {
-        "src": "skeloton.webp",
+        "src": "./img/skeloton.webp",
         "caption": "skeloton",
         "category": "misc"
     }
