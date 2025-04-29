@@ -1,14 +1,14 @@
 <!DOCTYPE html >
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <title>portfolio</title>
         <style>
             body {
-                background-color: #cdebb2;
                 height: 100vh;
                 overflow: hidden;
                 margin: 0;
-                margin-left: 10px
+                font-family: 'Poppins', sans-serif;
             }
             main {
                 display: flex;
@@ -17,6 +17,9 @@
             }
             #AboutMe {
                 flex: 1;
+                background-color: #cdebb2;
+                padding: 10px;
+                justify-content: center;
             }
             #Gallery {
                 flex: 2;
@@ -55,12 +58,19 @@
                 transform: translateX(-50%);
                 box-shadow: 0 5px 15px rgba(0,0,0,0.3);
                 z-index: 1000;
+                animation: fadeIn 0.3s ease;
+                border-radius: 10px;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translate(-50%, -30%); }
+                to { opacity: 1; transform: translate(-50%, 0); }
             }
             #popup img {
                 max-height: 60vh;
                 width: auto;
                 border: 1px solid black;
                 cursor: default;
+                
             }
             #popup img:hover {
                 transform: none;
@@ -80,6 +90,12 @@
             }
             #closePopup:hover {
                 background-color: #cc0000;
+            }
+            #AboutMe img {
+                display: block;
+                margin: 0 auto 20px auto;
+                max-height: 200px;
+                max-width: 40%;
             }
         </style>        
     </head>
