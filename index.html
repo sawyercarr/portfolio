@@ -147,6 +147,21 @@
     </body>
 </html>
 <script>
+
+    let allImages = [];
+
+    function populateGallery(category) {
+        const imageGrid = document.getElementById('imageGrid');
+        imageGrid.innerHTML = ''; 
+
+        allImages.forEach(img => {
+            if (category == 'All' || img.dataset.category == category) {
+                imageGrid.appendChild(img);
+            }
+        });
+    }
+
+
     const popup = document.getElementById('popup');
     const closePopup = document.getElementById('closePopup');
 
@@ -167,7 +182,6 @@
             const imageGrid = document.getElementById('imageGrid');
             const tabsContainer = document.getElementById('tabs');
             const categoriesSet = new Set();
-            //const gallery = document.getElementById('Gallery');
             data.forEach(item => {
                 const img = document.createElement('img');
                 img.src = item.src;
@@ -181,22 +195,33 @@
                     document.getElementById('popup').style.display = 'flex';
                 });
 
-                imageGrid.appendChild(img);
+                allImages.push(img);
+
+                //imageGrid.appendChild(img);
 
                 categoriesSet.add(item.category);
             });
+
             const allTab = document.createElement('div');
             allTab.textContent = 'All';
             allTab.classList.add('tab');
             tabsContainer.appendChild(allTab);
+            allTab.addEventListener('click', () => {
+                populateGallery('All');
+            });
 
-            // Create tabs for each unique category
             categoriesSet.forEach(category => {
                 const tab = document.createElement('div');
                 tab.textContent = category;
                 tab.classList.add('tab');
                 tabsContainer.appendChild(tab);
+
+                tab.addEventListener('click', () => {
+                    populateGallery(category);
+                });
             });
+
+            populateGallery('All');
         })
         .catch(error => console.error('Failed to fetch data:', error)); 
 </script>
