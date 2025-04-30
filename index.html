@@ -1,56 +1,34 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
-        <title>portfolio</title>
-        <style>
-            .row {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            body {
-                background-color: #E1F0C4 ;
-
-            }img {
-                height: 300px;
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+        <title>portfolio</title>    
     </head>
     <body>
-        <p style="text-align : center;">(put text here)</p>
-        <h1 style="text-align : center;">portfolio</h1>
-        
-        <div class="row">
-            <img src="IMG_4197.webp"/>
-            <p>description</p>
-        </div>
-        <div class="row">
-            <p>description</p> 
-            <img src="IMG_0285.webp"/>
-        </div>
-        <div class="row">
-            <img src="IMG_4544.webp"/>
-            <p>description</p>
-        </div>
-        <div class="row">
-            <p>description</p> 
-            <img src="IMG_4197.webp"/>
-        </div>
-        <div class="row">
-            <img src="IMG_4197.webp"/>
-            <p>description</p>
-        </div>
-        <div class="row">
-            <p>description</p> 
-            <img src="IMG_4197.webp"/>
-        </div>
+        <main>
+            <section id="AboutMe">
+                <h4>About Me</h4>
+                <img src = "./img/Default_pfp.jpg"/>
+                <p>My name is Sawyer, and I'm an artist who works across a wide range of mediums, blending both traditional and digital approaches. My practice spans two-dimensional and three-dimensional forms, including both physical and digital art. While I enjoy experimenting with various materials and techniques, my primary focus is just to improve my artistic skills.</p>
+                <p>.</p>
+
+            </section>
+            <section id = "Gallery">
+                <div id="tabs"></div>
+                <div id = "popup">
+                    <p id = "popupText"> I am a popup</p>
+                    <div id = "popupContent">
+                        <button id = "Prev">&#x276E;</button>
+                        <img id = "popupImg" src = "IMG_4197.webp"/>
+                        <button id = "Next">&#x276F;</button>
+                    </div>
+                    <button id = "closePopup">Close</button>
+                </div>
+                <div id="imageGrid">
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
     </body>
-     <div class="row">
-            <img src="IMG_4197.webp"/>
-            <p>description</p>
-        </div>
-        <div class="row">
-            <p>description</p> 
-            <img src="IMG_4197.webp"/>
-        </div>
 </html>

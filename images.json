@@ -1,0 +1,59 @@
+[
+    {
+        "src": "./img/panic_attack.webp",
+        "caption": "pouring everything into a piece can leave the mind empty",
+        "category": "portraits"
+    },
+    {
+        "src": "./img/dice_bunny.webp",
+        "caption": "This is a sculpture made entirely out of stacked white dice with black dots. The dice are arranged to form a rabbit",
+        "category": "misc"
+    },
+    {
+        "src": "./img/pink.webp",
+        "caption": "the beuty in facelessness",
+        "category": "faceless"
+    },
+    {
+        "src": "./img/purp.webp",
+        "caption": "curiosity",
+        "category": "faceless"
+    },
+    {
+        "src": "./img/yellow.webp",
+        "caption": "kile",
+        "category": "faceless"
+    },
+    {
+        "src": "./img/green.webp",
+        "caption": "attempt of a face",
+        "category": "faceless"
+    },
+    {
+        "src": "./img/blue.webp",
+        "caption": "",
+        "category": "faceless"
+    },
+    {
+        "src": "./img/self_portait.webp",
+        "caption": "my senior year self portait",
+        "category": "portraits"
+    },
+    {
+        "src": "./img/music.webp",
+        "caption": "pen sketch",
+        "category": "portraits"
+    },
+    {
+        "src": "./img/stumped.webp",
+        "caption": "one of stumps",
+        "category": "wood"
+    },
+    {
+        "src": "./img/skeloton.webp",
+        "caption": "skeloton",
+        "category": "misc"
+    }
+
+]
+
